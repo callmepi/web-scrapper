@@ -1,5 +1,5 @@
-from bs4 import BeautifulSoup
 import requests
+from bs4 import BeautifulSoup
 
 URL = 'https://www.sklavenitis.gr/galata-rofimata-chymoi-psygeioy/galata-psygeioy/'
 
