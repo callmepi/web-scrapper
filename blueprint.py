@@ -1,10 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
+import rich
 
 URL = 'https://www.sklavenitis.gr/galata-rofimata-chymoi-psygeioy/galata-psygeioy/'
-
-def cyan(txt) :
-    return "\033[1;36;48m" + txt +"\033[1;37;48m"
 
 page = requests.get(URL)
 
@@ -19,4 +17,4 @@ for prod in products :
     title = prod.find("h4").find("a").get_text()
     price = prod.find("div", class_="price").get_text()
     # print (title.get_text(), price.get_text())
-    print(title.strip(), '->' , cyan(price.strip()))
+    rich.print(title.strip() +' -> [cyan]'+ price.strip() +'[/cyan]')
