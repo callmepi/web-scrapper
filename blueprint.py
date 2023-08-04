@@ -1,3 +1,5 @@
+# simple web-scrapper example
+
 import requests
 from bs4 import BeautifulSoup
 import rich
