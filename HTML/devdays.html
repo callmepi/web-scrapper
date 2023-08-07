@@ -19,17 +19,29 @@
             h3 {
                 color: black;
             }
+
+            #intro { /* this refers to id=intro */
+                font-size: 2em;
+                font-style: italic;
+                color: orange;
+            }
+            
+            .note { /* this refers to class="note" */
+                padding-left: 2em;
+            }
         </style>
     </head>
     <body>
         <h1>Title H1</h1>
+        <!-- nore phaders -->
         <h2>Smaller title H2</h2>
+
         <h3>Even smaller title H3</h3>
 
-        <p>
+        <p id="intro">
             This is a paragraph.
         </p>
-        <p>
+        <p class="note">
             Praesent vestibulum tincidunt nunc ut commodo. Maecenas vel elit metus.
             
             Ut consectetur erat a tristique dictum. <span>Donec aliquam, sapien nec fringilla blandit</span>, turpis nibh sodales elit, non malesuada mi diam accumsan elit.
@@ -45,7 +57,7 @@
         <p>
             Praesent vitae nisl quam. Pellentesque maximus lacus nec rhoncus fringilla. Sed ut mi at ligula tincidunt ullamcorper. Fusce et vehicula sem. Curabitur nec sem nec nunc gravida pretium. Fusce ut augue a ligula blandit lacinia. Praesent feugiat egestas eleifend. Cras rhoncus nisl nisl, at vulputate ipsum molestie non. Curabitur sit amet tortor non orci pharetra ultrices ac nec sem. Nulla aliquam a nisl sed suscipit.
         </p>
-        <p>
+        <p class="note">
             Duis ac aliquam odio. Nam semper massa sit amet lorem iaculis aliquet. Maecenas mauris ex, condimentum nec lobortis ut, placerat eget quam. Cras suscipit vitae urna sit amet interdum. Cras facilisis quis metus ut scelerisque. Duis vehicula nec dolor eu vulputate. Nunc faucibus felis eu felis interdum faucibus. Nullam nec ante at lectus auctor varius. Aliquam erat volutpat. Cras quis sagittis lorem, vel scelerisque velit. Vestibulum id facilisis lacus. Mauris sollicitudin ultrices eros in ultricies. Nam in luctus dolor. Sed nibh dolor, tincidunt et egestas ut, maximus nec ipsum. Quisque congue ullamcorper consectetur.
         </p>
     </body>
